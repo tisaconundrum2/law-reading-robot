@@ -12,6 +12,7 @@
   <ItemGroup>
     <PackageReference Include="coverlet.collector" Version="6.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="8.0.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
     <PackageReference Include="xunit" Version="2.5.3" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.5.3" />
@@ -24,6 +25,11 @@
   <ItemGroup>
     <ProjectReference Include="..\LawRobot.Core\LawRobot.Core.csproj" />
     <ProjectReference Include="..\LawRobot.Data\LawRobot.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\LawRobot.Web\appsettings.json" Link="TestConfig\appsettings.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\LawRobot.Web\appsettings.Development.json" Link="TestConfig\appsettings.Development.json" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 
 </Project>
