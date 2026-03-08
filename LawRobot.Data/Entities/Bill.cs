@@ -12,7 +12,11 @@ public class Bill
     public long BillInternalId { get; set; }
 
     [Required]
-    [RegularExpression(@"^\d{4}[0-1][HS][BR]\d+$")]
+        /// <summary>
+    /// Full PA legislature bill identifier, e.g. "20230HB1234".
+    /// Format: year + session type digit + chamber + bill type + number.
+    /// </summary>
+[RegularExpression(@"^\d{4}[0-1][HS][BR]\d+$")]
     public string LegislativeId { get; set; } = string.Empty;
 
     [Required]

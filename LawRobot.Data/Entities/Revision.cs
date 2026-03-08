@@ -11,7 +11,11 @@ public class Revision
     public long RevisionInternalId { get; set; }
 
     [Required]
-    [RegularExpression(@"^\d{4}[0-1][HS][BR]\d+P\d+$")]
+        /// <summary>
+    /// Full PA legislature revision identifier, e.g. "20230HB1234P1".
+    /// Format: bill identifier + printer/revision suffix (P + number).
+    /// </summary>
+[RegularExpression(@"^\d{4}[0-1][HS][BR]\d+P\d+$")]
     public string RevisionGuid { get; set; } = string.Empty;
 
     public long? PrinterNo { get; set; }
