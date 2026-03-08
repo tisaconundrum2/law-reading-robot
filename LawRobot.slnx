@@ -1,0 +1,9 @@
+<Solution>
+  <Project Path="LawRobot.Core/LawRobot.Core.csproj" />
+  <Project Path="LawRobot.Data/LawRobot.Data.csproj" />
+  <Project Path="LawRobot.DocxExtractor/LawRobot.DocxExtractor.csproj" />
+  <Project Path="LawRobot.Jobs/LawRobot.Jobs.csproj" />
+  <Project Path="LawRobot.Summarizer/LawRobot.Summarizer.csproj" />
+  <Project Path="LawRobot.Tests/LawRobot.Tests.csproj" />
+  <Project Path="LawRobot.Web/LawRobot.Web.csproj" />
+</Solution>

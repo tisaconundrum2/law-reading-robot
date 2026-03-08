@@ -1,0 +1,6 @@
+@LawRobot.Web_HostAddress = http://localhost:5127
+
+GET {{LawRobot.Web_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
